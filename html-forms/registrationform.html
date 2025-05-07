@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+</head>
+<body>
+    
+    <form method="POST" action="/action.php">
+        <label for="FirstName">First Name:</label><br>
+        <input type="text" id="fname" name="fname" maxlength="10" minlength="2"><br><br>
+
+        <label for="LastName">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" maxlength="10" minlength="2"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" pattern="[a-z._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <p>Please select a gender:</p>
+            <input type="radio" id="male" name="gender" value="male">Male </input>
+            <input type="radio" id="female" name="gender" value="female">female </input>
+            <input type="radio" id="other" name="gender" value="other">Other </input><br><br>
+
+        
+        <label for="country">Country:</label><br>
+
+        <select id="country" name="country">
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="uk">UK</option>
+            <option value="other">Other</option>
+        </select><br><br>
+         
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" min="5" max="20"><br><br>
+
+        <label for="marital-status">What is your marital status?</label>
+        <input type="checkbox" name="mariatal-status" id="mariatal-status" value="single">Single</input>
+        <input type="checkbox" name="mariatal-status" id="mariatal-status" value="married">Married</input>
+        <input type="checkbox" name="mariatal-status" id="mariatal-status" value="divorced">Divorced</input><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
